@@ -90,9 +90,9 @@ body, html {
     .text {
         top: 45%;
         left: 10%;
-        font-size: 180%;
+        font-size: 150%;
         left: 8% !important;
-        width: 60%;
+        width: 80%;
         line-height: 130%;
     }
     .logo-container {
