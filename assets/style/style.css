@@ -84,11 +84,11 @@ body, html {
 }
 @media only screen and (max-width: 1280px) {
     .mandala {
-        width: 50%;
+        width: 40%;
         right: 0%;
     }
     .text {
-        top: 45%;
+        top: 50%;
         left: 10%;
         font-size: 150%;
         left: 8% !important;
