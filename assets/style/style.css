@@ -1,0 +1,179 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.background {
+    height: 100%;
+    background: linear-gradient(112.1deg, #000000, #292828);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+    color: #b7996f;
+    opacity: 0%;
+    font-family: "Josefin Sans", sans;
+    top: 80%;
+    left: 4%;
+    width: 90%;
+    position: absolute;
+    font-size: 150%;
+    line-height: 140%;
+    animation-name: text-fade;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.text {
+    color: #b7996f;
+    opacity: 0%;
+    top: 40%;
+    left: 4%;
+    position: absolute;
+    font-size: 200%;
+    font-family: "Josefin Sans", sans;
+    line-height: 150%;
+    animation-name: text-fade;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.mandala {
+    align-self: flex-end;
+    top: 10%;
+    right: -20%;
+    opacity: 0%;
+    position: absolute;
+    animation-name: mandala;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.9s;
+}
+
+.animation-container {
+    margin: auto;
+    align-self: center;
+    position: relative;
+}
+.logo-container {
+    margin: 0;
+    top: 41%;
+    align-self: center;
+    position: absolute;
+    animation-name: logo-container;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: 2s;
+    background-color: transparent;
+
+}
+
+.logo_gold {
+    width: 328px;
+    float: left;
+    opacity: 0%;
+    animation-name: logo;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@media only screen and (max-width: 1280px) {
+    .mandala {
+        width: 50%;
+        right: 0%;
+    }
+    .text {
+        top: 45%;
+        left: 10%;
+        font-size: 180%;
+        left: 8% !important;
+        width: 80%;
+        line-height: 130%;
+    }
+    .logo-container {
+        top: 2% !important;
+        left: 8% !important;
+        margin: 0 !important;
+    }
+    .logo_gold {
+        width: 40%;
+    }
+    .footer {
+        font-size: 150%;
+        left: 8% !important;
+        width: 50%;
+        left: 1%;
+	    line-height: 130%;
+    }
+
+    .mandala, .logo_gold, .logo-container, .animation-container, .circle, .text, .footer {
+        -o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+        opacity: 100%;
+        }
+}
+
+
+.circle {
+    position: relative;
+    animation-name: circle;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: scale(0%);
+    opacity: 0%;
+    float: left;
+    margin: 7px;
+    height: 90px;
+    width: 90px;
+    background-color: #b7996f;
+    border-radius: 100%;
+}
+
+@keyframes circle {
+    0% {transform: scale(0%); border-radius: 100%; opacity: 100%;}
+    25% {transform: scale(100%); border-radius: 100%; opacity: 100%;}
+    50% {transform: scale(0%); border-radius: 100%; opacity: 100%;}
+    75% {transform: scale(100%); border-radius: 20%; opacity: 100%;}
+    100% {transform: scale(0%); border-radius: 20%; opacity: 100%;}
+}
+@keyframes logo {
+    0% {transform: scale(0%);}
+    25% {transform: scale(100%); opacity: 100%;}
+    75% {transform: scale(100%);opacity: 100%;}
+    100% {transform: scale(60%);opacity: 100%;}
+}
+
+@keyframes logo-container {
+    0% {top: 41%}
+    100% {top: 1%; margin: 0; left: 4%;}
+}
+
+@keyframes mandala {
+    from {opacity: 0%;}
+    to  {opacity: 100%; right: 0%;}
+}
+
+@keyframes text-fade {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
